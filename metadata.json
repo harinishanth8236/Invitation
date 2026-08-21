@@ -1,0 +1,6 @@
+{
+  "name": "Anand & Subhashini Wedding Invitation",
+  "description": "Premium modern digital wedding invitation for Anand & Subhashini, 12 & 13 September 2026 at K.P. Mahal, Pallapatti.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

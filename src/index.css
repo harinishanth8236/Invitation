@@ -1,0 +1,177 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-espresso: #24130A;
+    --color-espresso-light: #3D2214;
+    --color-parchment: #FDFBF7;
+    --color-parchment-warm: #F8F3EB;
+    --color-gold: #C5A059;
+    --color-gold-light: #F3E3B6;
+    --color-gold-dark: #8C6928;
+    --color-maroon: #731A1D;
+    --color-maroon-dark: #4A1012;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #24130A;
+    background-color: #FAF6F0;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-italiana {
+  font-family: 'Italiana', serif;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-cinzel-dec {
+  font-family: 'Cinzel Decorative', serif;
+}
+
+.font-marcellus {
+  font-family: 'Marcellus', serif;
+}
+
+.font-pinyon {
+  font-family: 'Pinyon Script', cursive;
+}
+
+.font-greatvibes {
+  font-family: 'Great Vibes', cursive;
+}
+
+.font-script {
+  font-family: 'Alex Brush', cursive;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Luxury Wedding Rich Layered Background */
+.bg-wedding-canvas {
+  background-color: #F7EFE4;
+  background-image: 
+    radial-gradient(ellipse at 50% 0%, rgba(220, 185, 120, 0.28) 0%, transparent 60%),
+    radial-gradient(ellipse at 85% 25%, rgba(115, 26, 29, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 15% 75%, rgba(197, 160, 89, 0.15) 0%, transparent 55%),
+    radial-gradient(ellipse at 50% 100%, rgba(115, 26, 29, 0.12) 0%, transparent 70%),
+    url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c5a059' fill-opacity='0.07' fill-rule='evenodd'%3E%3Cpath d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l26-26v2L54 40h-2zm4 0l22-22v2L58 40h-2zm4 0l18-18v2L62 40h-2zm4 0l14-14v2L66 40h-2zm4 0l10-10v2L70 40h-2zm4 0l6-6v2L74 40h-2zm4 0l2-2v2L78 40h-2z'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+}
+
+.bg-royal-pattern {
+  background-color: #FAF6F0;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(197, 160, 89, 0.2) 0%, transparent 65%),
+    radial-gradient(circle at 100% 50%, rgba(115, 26, 29, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 0% 50%, rgba(197, 160, 89, 0.1) 0%, transparent 50%),
+    radial-gradient(rgba(197, 160, 89, 0.22) 1.5px, transparent 1.5px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 28px 28px;
+}
+
+.bg-envelope-pattern {
+  background-color: #1F1008;
+  background-image: 
+    radial-gradient(circle at 50% 20%, rgba(197, 160, 89, 0.25) 0%, transparent 65%),
+    radial-gradient(circle at 15% 85%, rgba(115, 26, 29, 0.35) 0%, transparent 60%),
+    radial-gradient(circle at 85% 85%, rgba(197, 160, 89, 0.18) 0%, transparent 60%),
+    radial-gradient(rgba(232, 211, 159, 0.15) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 24px 24px;
+}
+
+.bg-mandap-gradient {
+  background: linear-gradient(180deg, rgba(255, 253, 249, 0.98) 0%, rgba(248, 241, 230, 0.96) 100%);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #7A571A 0%, #C5A059 25%, #FFF0C2 50%, #C5A059 75%, #8C6928 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-shimmer-border {
+  border-image: linear-gradient(135deg, #E8D39F 0%, #C5A059 35%, #FFF2CC 50%, #C5A059 70%, #9A7B38 100%) 1;
+}
+
+.shadow-royal-card {
+  box-shadow: 
+    0 10px 30px -10px rgba(36, 19, 10, 0.08),
+    0 25px 50px -20px rgba(115, 26, 29, 0.06),
+    0 0 0 1px rgba(197, 160, 89, 0.25),
+    inset 0 0 40px rgba(232, 211, 159, 0.05);
+}
+
+.shadow-gold-glow {
+  box-shadow: 0 0 35px -5px rgba(197, 160, 89, 0.35);
+}
+
+.shadow-envelope-3d {
+  box-shadow: 
+    0 30px 70px -15px rgba(20, 10, 5, 0.65),
+    0 0 0 1px rgba(197, 160, 89, 0.35),
+    inset 0 1px 1px rgba(255, 255, 255, 0.3);
+}
+
+/* Animations */
+@keyframes shimmerPass {
+  0% { transform: translateX(-150%) rotate(25deg); }
+  100% { transform: translateX(250%) rotate(25deg); }
+}
+
+.animate-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-shimmer::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 35%,
+    rgba(255, 255, 255, 0.4) 50%,
+    transparent 65%
+  );
+  animation: shimmerPass 6s infinite ease-in-out;
+  pointer-events: none;
+}
+
+@keyframes gentleFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-6px) rotate(1deg); }
+}
+
+.animate-gentle-float {
+  animation: gentleFloat 6s ease-in-out infinite;
+}
+
+@keyframes pulseGlowRing {
+  0%, 100% { box-shadow: 0 0 15px rgba(197, 160, 89, 0.2), inset 0 0 10px rgba(197, 160, 89, 0.1); }
+  50% { box-shadow: 0 0 30px rgba(197, 160, 89, 0.5), inset 0 0 20px rgba(197, 160, 89, 0.25); }
+}
+
+.animate-glow-ring {
+  animation: pulseGlowRing 4s ease-in-out infinite;
+}
